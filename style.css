@@ -1,4 +1,9 @@
 /* CSS VARIABLES */
+:root[data-theme='dark'] {
+  --background-primary: #132221;
+  --background-secondary: #476462;
+  --text: #e1e1e1;
+}
 
 :root {
   --background-primary: #f3f3f3;
@@ -17,6 +22,7 @@ body,
   box-sizing: border-box;
   background-color: var(--background-secondary);
   font-family: 'Alegreya sans', sans-serif;
+  color: var(--text)
 }
 
 html {
@@ -58,7 +64,7 @@ span {
 .navlink {
   text-decoration: none;
   margin-right: 0.5rem;
-  color: black;
+  color: var(--text);
 }
 
 /* HLAVNÍ NADPIS */
