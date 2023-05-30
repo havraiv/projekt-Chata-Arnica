@@ -247,6 +247,17 @@ i {
     font-size: 3rem;
   }
 
+  .pricelist__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .offer {
+    width: 220px;
+  }
+
   /* ÚVODNÍ TEXT */
 
   .subheading {
@@ -259,7 +270,43 @@ i {
   .review__text {
     width: 250px;
     padding: 1.5rem;
+    background-color: var(--background-secondary);
+    position: relative;
+    left: 60px;
+  }
+
+  .review__author {
+    background-color: var(--background-secondary);
+  }
+
+  .review__photo {
+    background-image: url('./images/reviewer.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+  }
+
+  .review__content {
+    background-color: var(--background-primary);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
   }
 
   /* TADY PIŠTE STYLY PRO ŠÍŘKU NAD 800PX */
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    gap: 6rem;
+  }
+
+  .pricelist__content {
+    gap: 6rem;
+  }
 }
